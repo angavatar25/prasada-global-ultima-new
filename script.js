@@ -60,4 +60,9 @@ getCardContainer.innerHTML = ServiceData.map((data) => {
       </div>
     </div>`
   )
-}).join('')
+}).join('');
+
+const scrollToSection = (sec) => {
+  const section = document.getElementById(sec);
+  section.scrollIntoView({ behavior: "smooth" }); // Smoothly scrolls to the section
+}
